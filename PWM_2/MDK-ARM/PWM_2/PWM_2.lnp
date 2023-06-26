@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"pwm_2\startup_stm32f103xb.o"
+"pwm_2\main.o"
+"pwm_2\gpio.o"
+"pwm_2\dma.o"
+"pwm_2\tim.o"
+"pwm_2\usart.o"
+"pwm_2\stm32f1xx_it.o"
+"pwm_2\stm32f1xx_hal_msp.o"
+"pwm_2\stm32f1xx_hal_gpio_ex.o"
+"pwm_2\stm32f1xx_hal_tim.o"
+"pwm_2\stm32f1xx_hal_tim_ex.o"
+"pwm_2\stm32f1xx_hal.o"
+"pwm_2\stm32f1xx_hal_rcc.o"
+"pwm_2\stm32f1xx_hal_rcc_ex.o"
+"pwm_2\stm32f1xx_hal_gpio.o"
+"pwm_2\stm32f1xx_hal_dma.o"
+"pwm_2\stm32f1xx_hal_cortex.o"
+"pwm_2\stm32f1xx_hal_pwr.o"
+"pwm_2\stm32f1xx_hal_flash.o"
+"pwm_2\stm32f1xx_hal_flash_ex.o"
+"pwm_2\stm32f1xx_hal_exti.o"
+"pwm_2\stm32f1xx_hal_uart.o"
+"pwm_2\system_stm32f1xx.o"
+--strict --scatter "PWM_2\PWM_2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM_2.map" -o PWM_2\PWM_2.axf
